@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title>Pizza Day</title>
+  </head>
+    <body>
+      <div class="container">
+         <center>
+           <h1><u>Pizza Day</u></h1>
+           <h3>Daves Specialty Pies!</h3>
+         </center>
+         <br>
+         <div class="pizza-order">
+           <form id="order-form">
+             <div class="col-sm-4 form-group">
+               <label for="size">Size of Pie?</label>
+               <select id="size" class="form-control">
+                 <option value="small">Small</option>
+                 <option value="medium">Medium</option>
+                 <option value="large">Large</option>
+               </select>
+             </div>
+             <div class="col-sm-4 form-group">
+               <label for="amount">How many pies do you want?</label>
+               <select id="amount" class="form-control">
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <!-- <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option> -->
+               </select>
+             </div>
+             <div class="col-sm-4 form-group">
+               <label for="topping">What kind toppings do you want on your delicious pizza?</label>
+               <input type="checkbox" name="topping" class="topping-selection" value="pepperoni"> Pepperoni <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="olives"> Olives <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="mushrooms"> Mushrooms <br>
+               <!-- <input type="checkbox" name="topping" class="topping-selection" value="pineapple"> Pineapple <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="sausage"> Sausage <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="cheese"> Extra Cheese <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="anchovies"> Anchovies <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="marshmallows"> Marshmallows <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="peanut-butter"> Peanut Butter <br>
+               <input type="checkbox" name="topping" class="topping-selection" value="clams"> Clams <br> -->
+             </div>
+             <br>
+             <button type="submit" class="btn btn-success">Get your order on</button>
+           </form>
+         </div>
+         <br>
+         <br>
+         <div class="result" id="pizza-price">
+           <h3>Your pizza will cost $<span id="order-price"></span>.</h3>
+           <br>
+           <form action="pizza.html" method="post">
+             <button id="restart" class="btn btn-danger">Order Another Pizza</button>
+           </form>
+         </div>
+       </div>
+ </body>
+</html>
